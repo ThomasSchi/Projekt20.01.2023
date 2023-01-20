@@ -9,8 +9,7 @@ public class Autovermietung {
         int alter = s.nextInt();
         if (alter < 18) {
             System.out.println("Vielen Dank fuer Ihr Interesse, melden Sie sich gerne, wenn Sie mindestens 18 geworden sind bei uns.");
-        } else
-        System.out.print("Welche Sicherheit wollen Sie hinterlegen?");
+        } else System.out.print("Welche Sicherheit wollen Sie hinterlegen?");
         String sicherheit = s.next();
         System.out.print("Bitte geben Sie Ihre Telefonnummer ein: ");
         int telefonnummer = s.nextInt();
@@ -19,12 +18,10 @@ public class Autovermietung {
         System.out.print("Ihr Vertrag wird nun erstellt: ");
 
 
-
-
-        Autos auto1 = new Autos("BMW","Limusine",130,true,1);
-        Autos auto2 = new Autos("BMW","Gälendewagen",130,true,2);
-        Autos auto3 = new Autos("Audi","Limusine",100,false,3);
-        Autos auto4 = new Autos("Mercedes Benz","Sport",230,true,4);
+        Autos auto1 = new Autos("BMW", "Limusine", 130, true, 1);
+        Autos auto2 = new Autos("BMW", "Gälendewagen", 130, true, 2);
+        Autos auto3 = new Autos("Audi", "Limusine", 100, false, 3);
+        Autos auto4 = new Autos("Mercedes Benz", "Coupe", 230, true, 4);
         Lagerbestand lager = new Lagerbestand();
         lager.addCar(auto1);
         lager.addCar(auto2);
