@@ -3,13 +3,13 @@ public class Autos {
     private String marke;
     private String typ;
     private double preisprotag;
-    private boolean verfügbarkeit;
+    private boolean verfuegbarkeit;
 
-    public Autos(String marke, String typ, double preisprotag, boolean verfügbarkeit) {
+    public Autos(String marke, String typ, double preisprotag, boolean verfuegbarkeit) {
         this.marke = marke;
         this.typ = typ;
         this.preisprotag = preisprotag;
-        this.verfügbarkeit = verfügbarkeit;
+        this.verfuegbarkeit = verfuegbarkeit;
     }
 
     public String getMarke() {
@@ -36,12 +36,12 @@ public class Autos {
         this.preisprotag = preisprotag;
     }
 
-    public boolean getVerfügbarkeit() {
-        return verfügbarkeit;
+    public boolean getVerfuegbarkeit() {
+        return verfuegbarkeit;
     }
 
-    public void setVerfügbarkeit(boolean verfügbarkeit) {
-        this.verfügbarkeit = verfügbarkeit;
+    public void setVerfuegbarkeit(boolean verfuegbarkeit) {
+        this.verfuegbarkeit = verfuegbarkeit;
     }
 }
 
