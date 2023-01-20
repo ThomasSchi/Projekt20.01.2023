@@ -18,10 +18,10 @@ public class Autovermietung {
         System.out.print("Ihr Vertrag wird nun erstellt: ");
 
 
-        Autos auto1 = new Autos("BMW", "Limusine", 130, true, 1);
-        Autos auto2 = new Autos("BMW", "Gälendewagen", 130, true, 2);
-        Autos auto3 = new Autos("Audi", "Limusine", 100, false, 3);
-        Autos auto4 = new Autos("Mercedes Benz", "Coupe", 230, true, 4);
+        Autos auto1 = new Autos("BMW", "Limousine", 130, true, 1);
+        Autos auto2 = new Autos("BMW", "Geländewagen", 130, true, 2);
+        Autos auto3 = new Autos("Audi", "Limousine", 100, false, 3);
+        Autos auto4 = new Autos("Mercedes Benz", "Cabrio", 230, true, 4);
         Lagerbestand lager = new Lagerbestand();
         lager.addCar(auto1);
         lager.addCar(auto2);
@@ -46,5 +46,22 @@ public class Autovermietung {
             System.out.println("Bitte verfügbare Marke schreiben ");
 
         }
+
+        System.out.println("Bitte geben Sie Ihren Autotyp ein: ");
+        String typ1 = sc.next();
+        if (typ1.equals("Limousine"){
+            System.out.println("Limousine sehr gute Wahl");
+
+        } else if (typ1.equals("Geländewagen"){
+            System.out.println("Geländewagen sehr gute Wahl");
+
+        } else if (typ1.equals("Cambrio"){
+            System.out.println("Cambrio sehr gute Wahl");
+
+        } else {
+            System.out.println("Bitte verfügbare Autotypen schreiben ");
+
+        }
+
     }
 }
