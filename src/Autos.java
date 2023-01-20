@@ -36,7 +36,7 @@ public class Autos {
         this.preisprotag = preisprotag;
     }
 
-    public boolean isVerfügbarkeit() {
+    public boolean getVerfügbarkeit() {
         return verfügbarkeit;
     }
 
