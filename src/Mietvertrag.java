@@ -14,7 +14,6 @@ public class Mietvertrag {
     public Mietvertrag() {
     }
 
-    ;
 
     public void Mietvertrag(String kundenname, String mietauto, double tagespreis, Date mietbeginn, Date mietende, double gesamtkosten, String zahlungsmethode) {
         this.kundenname = kundenname;
@@ -29,17 +28,6 @@ public class Mietvertrag {
     }
 
     public static void Dateneingabe(String kundenname, Date mietbeginn, Date mietende, double gesamtkosten, String zahlungsmethode) {
-        Scanner s = new Scanner(System.in);
-        System.out.print("Bitte geben Sie Ihren Namen ein: ");
-        String kunde = s.next();
-        System.out.print("Bitte geben Sie Ihr Alter ein: ");
-        int alter = s.nextInt();
-        System.out.print("Welche Sicherheit wollen Sie hinterlegen?");
-        String sicherheit = s.next();
-        System.out.print("Bitte geben Sie Ihre Telefonnummer ein: ");
-        int telefonnummer = s.nextInt();
-        System.out.print("Sind Sie ein Geschäftskunde? ");
-        String gfkunde = s.next();
 
 
     }
@@ -79,7 +67,29 @@ public class Mietvertrag {
 
     }
 
-    public void Vertragsvorlage () {
+    public static void Vertragsvorlage (String kundenname, Date mietbeginn, Date mietende, double gesamtkosten, String zahlungsmethode) {
+
+        System.out.println(" Name: " + kundenname);
+        System.out.println("Mietbeginn: " + mietbeginn);
+        System.out.println("Mietende: " + mietende);
+        System.out.println("Die Gesamtkosten betragen fuer den Zeitraum: " + gesamtkosten);
+        System.out.println("Mit welcher Zahlungsmethode möchten Sie das bezahlen?");
+
+        if (zahlungsmethode == "visa") {
+            System.out.println("Bitte geben Sie Ihre Kreditkartennummer ein: ");
+
+            //methode über zahlungsmethode einfügen
+            System.out.println("Kreditkartennummer : " );
+
+        } else if (zahlungsmethode == "bar" ) {
+            System.out.println("Bitte zahlen Sie das Geld ein.");
+        } else if (zahlungsmethode == "EC-Karte" ) {
+            System.out.println("Bitte geben Sie Ihre Kreditkartennummer ein: ");
+
+        }
+
+
 
     }
+
 }
