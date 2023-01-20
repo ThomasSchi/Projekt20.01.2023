@@ -1,9 +1,11 @@
+import java.util.Scanner;
 
 public class Autos {
     private String marke;
     private String typ;
     private double preisprotag;
     private boolean verfuegbarkeit;
+    private int id;
 
     public Autos(String marke, String typ, double preisprotag, boolean verfuegbarkeit) {
         this.marke = marke;
@@ -13,6 +15,7 @@ public class Autos {
     }
 
     public String getMarke() {
+
         return marke;
     }
 
@@ -43,5 +46,10 @@ public class Autos {
     public void setVerfuegbarkeit(boolean verfuegbarkeit) {
         this.verfuegbarkeit = verfuegbarkeit;
     }
+
+
+
+
+
 }
 
