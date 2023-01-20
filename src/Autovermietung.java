@@ -33,13 +33,13 @@ public class Autovermietung {
         System.out.println("Bitte suchen Sie die Marke aus.Sie können zwischen Audi,BMW,Mercedes Benz entscheiden");
 
         String marke1 = sc.next();
-        if (marke1 == "BMW") {
+        if (marke1.equals("BMW") ) {
             System.out.println("BMW sehr gute Wahl");
 
-        } else if (marke1 == "Mercedes Benz") {
+        } else if (marke1.equals("Mercedes Benz")) {
             System.out.println("Benz sehr gute Wahl");
 
-        } else if (marke1 == "Audi") {
+        } else if (marke1.equals("Audi")) {
             System.out.println("Audi sehr gute Wahl");
 
         } else {
