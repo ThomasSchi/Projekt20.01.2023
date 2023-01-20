@@ -8,11 +8,12 @@ public class Autos {
     private int id;
 
 
-    public Autos(String marke, String typ, double preisprotag, boolean verfuegbarkeit) {
+    public Autos(String marke, String typ, double preisprotag, boolean verfuegbarkeit, int id) {
         this.marke = marke;
         this.typ = typ;
         this.preisprotag = preisprotag;
         this.verfuegbarkeit = verfuegbarkeit;
+        this.id = id;
     }
 
     public String getMarke() {
@@ -48,9 +49,12 @@ public class Autos {
         this.verfuegbarkeit = verfuegbarkeit;
     }
 
+    public int getId() {
+        return id;
+    }
 
-
-
-
+    public void setId(int id) {
+        this.id = id;
+    }
 }
 
