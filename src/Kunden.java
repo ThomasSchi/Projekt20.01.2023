@@ -27,6 +27,9 @@ public class Kunden {
   public int getTelefonnummer(){
       return telefonnummer;
   }
+  public void autovermieten(Autos Auto, Lagerbestand Anzahl){
+      if (Auto.getVerfuegbarkeit() == true){
+          Auto.setVerfuegbarkeit(false);
+      }
+  }}
 
-
-}

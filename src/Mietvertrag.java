@@ -6,21 +6,22 @@ public class Mietvertrag {
     private String kundenname;
     private String mietauto;
     private double tagespreis;
-    private Date mietbeginn;
-    private Date mietende;
+    private int miettage;
+
     private double gesamtkosten;
     private String zahlungsmethode;
 
     public Mietvertrag() {
     }
 
+    ;
 
-    public void Mietvertrag(String kundenname, String mietauto, double tagespreis, Date mietbeginn, Date mietende, double gesamtkosten, String zahlungsmethode) {
+    public void Mietvertrag(String kundenname, String mietauto, double tagespreis,int miettage, double gesamtkosten, String zahlungsmethode) {
         this.kundenname = kundenname;
         this.mietauto = mietauto;
         this.tagespreis = tagespreis;
-        this.mietbeginn = mietbeginn;
-        this.mietende = mietende;
+        this.miettage = miettage;
+
         this.gesamtkosten = gesamtkosten;
         this.zahlungsmethode = zahlungsmethode;
 
@@ -28,6 +29,19 @@ public class Mietvertrag {
     }
 
     public static void Dateneingabe(String kundenname, Date mietbeginn, Date mietende, double gesamtkosten, String zahlungsmethode) {
+        Scanner s = new Scanner(System.in);
+        System.out.print("Bitte geben Sie Ihren Namen ein: ");
+        String kunde = s.next();
+        System.out.print("Bitte geben Sie Ihr Alter ein: ");
+        int alter = s.nextInt();
+        System.out.print("Welche Sicherheit wollen Sie hinterlegen?");
+        String sicherheit = s.next();
+        System.out.print("Bitte geben Sie Ihre Telefonnummer ein: ");
+        int telefonnummer = s.nextInt();
+        System.out.print("Sind Sie ein Geschäftskunde? ");
+        String gfkunde = s.next();
+        System.out.print("Wie viele möchten Sie das Auto mieten: ");
+        int miettage = s.nextInt();
 
 
     }
@@ -46,13 +60,10 @@ public class Mietvertrag {
         return tagespreis;
     }
 
-    public Date getMietbeginn() {
-        return mietbeginn;
+    public int getMiettage() {
+        return miettage;
     }
 
-    public Date getMietende() {
-        return mietende;
-    }
 
     public double getGesamtkosten() {
         return gesamtkosten;
@@ -67,29 +78,7 @@ public class Mietvertrag {
 
     }
 
-    public static void Vertragsvorlage (String kundenname, Date mietbeginn, Date mietende, double gesamtkosten, String zahlungsmethode) {
-
-        System.out.println(" Name: " + kundenname);
-        System.out.println("Mietbeginn: " + mietbeginn);
-        System.out.println("Mietende: " + mietende);
-        System.out.println("Die Gesamtkosten betragen fuer den Zeitraum: " + gesamtkosten);
-        System.out.println("Mit welcher Zahlungsmethode möchten Sie das bezahlen?");
-
-        if (zahlungsmethode == "visa") {
-            System.out.println("Bitte geben Sie Ihre Kreditkartennummer ein: ");
-
-            //methode über zahlungsmethode einfügen
-            System.out.println("Kreditkartennummer : " );
-
-        } else if (zahlungsmethode == "bar" ) {
-            System.out.println("Bitte zahlen Sie das Geld ein.");
-        } else if (zahlungsmethode == "EC-Karte" ) {
-            System.out.println("Bitte geben Sie Ihre Kreditkartennummer ein: ");
-
-        }
-
-
+    public void Vertragsvorlage () {
 
     }
-
 }

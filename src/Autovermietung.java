@@ -9,13 +9,15 @@ public class Autovermietung {
         int alter = s.nextInt();
         if (alter < 18) {
             System.out.println("Vielen Dank fuer Ihr Interesse, melden Sie sich gerne, wenn Sie mindestens 18 geworden sind bei uns.");
-        } else System.out.print("Welche Sicherheit wollen Sie hinterlegen?");
+        } else System.out.print("Welche Sicherheit wollen Sie hinterlegen? ");
         String sicherheit = s.next();
         System.out.print("Bitte geben Sie Ihre Telefonnummer ein: ");
         int telefonnummer = s.nextInt();
         System.out.print("Sind Sie ein Geschaeftskunde? ");
         String gfkunde = s.next();
         System.out.print("Ihr Vertrag wird nun erstellt: ");
+        System.out.print("Wie viele Tage möchten Sie das Auto mieten: ");
+        int miettage = s.nextInt();
 
 
         Autos auto1 = new Autos("BMW", "Limousine", 130, true, 1);
@@ -29,10 +31,10 @@ public class Autovermietung {
         lager.addCar(auto4);
 
 
-        Scanner sc = new Scanner(System.in);
+
         System.out.println("Bitte suchen Sie die Marke aus.Sie können zwischen Audi,BMW,Mercedes Benz entscheiden");
 
-        String marke1 = sc.next();
+        String marke1 = s.next();
         if (marke1.equals("BMW") ) {
             System.out.println("BMW sehr gute Wahl");
 
@@ -48,14 +50,14 @@ public class Autovermietung {
         }
 
         System.out.println("Bitte geben Sie Ihren Autotyp ein: ");
-        String typ1 = sc.next();
-        if (typ1.equals("Limousine"){
+        String typ1 = s.next();
+        if (typ1.equals("Limousine")){
             System.out.println("Limousine sehr gute Wahl");
 
-        } else if (typ1.equals("Geländewagen"){
+        } else if (typ1.equals("Geländewagen")){
             System.out.println("Geländewagen sehr gute Wahl");
 
-        } else if (typ1.equals("Cambrio"){
+        } else if (typ1.equals("Cambrio")){
             System.out.println("Cambrio sehr gute Wahl");
 
         } else {
