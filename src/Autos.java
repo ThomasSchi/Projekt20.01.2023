@@ -7,6 +7,7 @@ public class Autos {
     private boolean verfuegbarkeit;
     private int id;
 
+
     public Autos(String marke, String typ, double preisprotag, boolean verfuegbarkeit) {
         this.marke = marke;
         this.typ = typ;
