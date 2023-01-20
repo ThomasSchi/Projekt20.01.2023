@@ -21,10 +21,16 @@ public class Autovermietung {
 
 
 
-        Autos auto1 = new Autos("BMW","Limusine",130,true);
-        Autos auto2 = new Autos("BMW","Gälendewagen",130,true);
-        Autos auto3 = new Autos("Audi","Limusine",100,false);
-        Autos auto4 = new Autos("Mercedes Benz","Sport",230,true);
+        Autos auto1 = new Autos("BMW","Limusine",130,true,1);
+        Autos auto2 = new Autos("BMW","Gälendewagen",130,true,2);
+        Autos auto3 = new Autos("Audi","Limusine",100,false,3);
+        Autos auto4 = new Autos("Mercedes Benz","Sport",230,true,4);
+        Lagerbestand lager = new Lagerbestand();
+        lager.addCar(auto1);
+        lager.addCar(auto2);
+        lager.addCar(auto3);
+        lager.addCar(auto4);
+
 
         Scanner sc = new Scanner(System.in);
         System.out.println("Bitte suchen Sie die Marke aus.Sie können zwischen Audi,BMW,Mercedes Benz entscheiden");
